@@ -3,7 +3,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    margin-bottom: 0px;
+    display: inline;
     background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 div {
@@ -13,6 +18,55 @@ div {
 
 h1 {
     color: #333;
+}
+
+footer {
+    display: block;
+    margin-top: 40px;
+}
+
+p.footerText1 {
+    text-align: left;
+    display: inline;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+p.footerText2 {
+    display: inline;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+div.footerDiv{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    background-color: lightgray;
+    margin: 20px;
+    padding: 0px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+div.footerDiv{
+    text-align: left;
+    background-color: lightgray;
+    margin: 0px;
+    padding: 0px;
 }
 
 a {
