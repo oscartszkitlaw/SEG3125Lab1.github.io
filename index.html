@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <style>
+      .question {
+        font-weight: bold;
+      }
+    </style>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
@@ -18,7 +23,7 @@
     <form>
 
         <div>
-          <label for="textQuestion">What is your initial impression of the UI?</label>
+          <label for="textQuestion" class="question">What is your initial impression of the UI?</label>
           <input type="text" id="textQuestion" name="textQuestion" required>
           <br>
         </div>
@@ -26,7 +31,7 @@
         <hr>
 
         <div>
-            <label>How satisfied are you with this UI?</label>
+            <label class="question">How satisfied are you with this UI?</label>
             <input type="radio" id="option1" name="question1" value="option1" required>
             <label for="option1">Very satisfied</label>
             
@@ -45,7 +50,7 @@
         
         <hr>
 
-        <label for="question2">Do you find the UI to be easy to navigate?</label>
+        <label for="question2" class="question">Do you find the UI to be easy to navigate?</label>
         <select id="question2" name="question2" required>
             <option value="" disabled selected>Select an option</option>
             <option value="optionA">Yes</option>
@@ -55,7 +60,7 @@
         <hr>
 
         <div>
-            <label>Which of the following is true?</label>
+            <label class="question">Which of the following is true?</label>
             
             <input type="checkbox" id="optionA" name="options[]" value="optionA">
             <label for="optionA">The UI is confusing to navigate</label>
@@ -71,7 +76,7 @@
         <hr>
 
         <div>
-          <label>What colour did you notice first in the above image?</label>
+          <label class="question">What colour did you notice first in the above image?</label>
           <input type="radio" id="option1" name="question4" value="option1" required>
           <label for="option1">White</label>
           
@@ -91,7 +96,7 @@
         <hr>
 
         <div>
-          <label>What feature was easiest to locate?</label>
+          <label class="question">What feature was easiest to locate?</label>
           <input type="radio" id="option1" name="question4" value="option1" required>
           <label for="option1">Search</label>
           
@@ -111,7 +116,7 @@
         <hr>
 
         <div>
-          <label>Additional comments:</label>
+          <label class="question">Additional comments:</label>
           <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
           
           <br>
